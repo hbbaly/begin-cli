@@ -35,12 +35,17 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods:  {
+    getdjbv()  {
+      console.log('asdasfa');
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less"  scoped>
 h3 {
   margin: 40px 0 0;
 }
@@ -55,4 +60,7 @@ li {
 a {
   color: #42b983;
 }
+   p{
+       color: @blue; // 声明的less样式变量
+   }
 </style>
